@@ -1,0 +1,9 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #34495e;
+  background-color: #fefefe; /* very light background */
+}

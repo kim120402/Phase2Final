@@ -1,0 +1,20 @@
+.weather {
+  padding: 20px;
+  border-radius: 10px;
+  color: #34495e;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.weather.sunny {
+  background-color: rgb(195, 248, 248); 
+}
+
+.weather.rainy {
+  background-color: rgb(195, 248, 248);
+}
+
+.weather.cloudy {
+  background-color: rgb(195, 248, 248);
+}

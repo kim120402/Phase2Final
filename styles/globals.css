@@ -1,0 +1,12 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* light neutral background */
+  color: #34495e; /* soft text */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

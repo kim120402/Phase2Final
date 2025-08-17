@@ -1,0 +1,24 @@
+.list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.item {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #ffffff; /* white */
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.item:hover {
+  background-color: #e0f7f4; /* subtle light teal */
+  transform: translateY(-5px);
+}

@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Toronto Food + Weather Project
+Overview
+This is my Phase 2 project for CPAN144. The app shows Toronto restaurants and a weather component. You can click on a restaurant to see more details like description and rating. I also added a simple navigation bar so it’s easy to move between pages.
 
-## Getting Started
+Components
+Nav.jsx – The top navigation bar. I used inline styles here to quickly style it. It has links to Home and Restaurants pages.
+RestaurantList.jsx – Displays a list of restaurants as clickable items. Each one links to a dynamic page for that restaurant.
+Weather.jsx – Shows current Toronto weather using an API. I used useState and useEffect so it updates automatically.
+Restaurants Page (/restaurants) – Shows all restaurants using RestaurantList.
+Dynamic Restaurant Page (/restaurants/[name]) – Shows description and rating for each restaurant using Next.js dynamic routing.
 
-First, run the development server:
+Routing
+Homepage with weather and a small intro.
+restaurants → Restaurants list page.
+restaurants/[name] → Dynamic page for each restaurant. Clicking a restaurant in the list goes here.
+I used Link and encodeURIComponent so restaurant names with spaces work in the URL.
+useParams() in the dynamic page gets the restaurant name from the URL.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+State Management
+Weather data updates automatically when the component mounts using useEffect.
+Restaurant pages are static for now, but the dynamic route grabs data from a JS object so you can easily update info later.
